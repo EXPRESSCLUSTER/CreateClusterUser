@@ -6,14 +6,14 @@ This article shows how to install, configure and operate EXPRESSCLUSER with an u
 ## Preparation with root account
 ### On all nodes
 1. Logon with root accout.
-1. Create user-gourp "clp" and user "clpadm" to install EXPRESSCLUSTER and configure/operation cluster.
+1. Create user-gourp "clp" and user "clpadm" to install, configure and operate EXPRESSCLUSER.
 ```bat
 # groupadd clp
 # useradd -g clp clpadm
 # passwd clpadm
   <Set clp user password>
 ```
-1. Add permission to "clpadm" to execute commands.
+1. Add permission to "clpadm" to execute commands which are required to install, configure and operate EXPRESSCLUSER.
 ```bat
 # visudo
 clpadm ALL=NOPASSWD: /sbin/reboot
